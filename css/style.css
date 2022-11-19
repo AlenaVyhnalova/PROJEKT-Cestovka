@@ -1,0 +1,161 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 20px;
+}
+
+.header {
+  margin: 40px auto 30px auto;
+}
+.header__logo {
+  width: 100%;
+  max-height: 30px;
+}
+.header__menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  padding: 0;
+}
+.header__link {
+  text-decoration: none;
+  color: #F03000;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 20px;
+}
+.header__link:hover {
+  background-color: #F03000;
+  color: white;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offer {
+  color: white;
+}
+.offer__main {
+  background-color: #888888;
+  background-size: cover;
+  background-position: center;
+  min-width: 440px;
+  min-height: 240px;
+  margin-bottom: 20px;
+}
+.offer__minor {
+  background-color: #888888;
+  background-size: cover;
+  background-position: center;
+  min-width: 440px;
+  min-height: 150px;
+  margin-bottom: 20px;
+}
+.offer__price {
+  background-color: #F03000;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+}
+.offer__title {
+  padding: 20px;
+  margin: 0;
+}
+.offer h1 {
+  font-size: 28px;
+}
+.offer h2 {
+  font-size: 20px;
+}
+.offer__description {
+  padding: 20px;
+  margin: 0;
+}
+
+.palmy {
+  background-image: url(images/palmy.png);
+}
+
+.jezero {
+  background-image: url(images/jezero.png);
+}
+
+.nakole {
+  background-image: url(images/nakole.png);
+}
+
+.lodicka {
+  background-image: url(images/lodicka.png);
+}
+
+.podkova {
+  background-image: url(images/podkova.png);
+}
+
+.zatoka {
+  background-image: url(images/zatoka.png);
+}
+
+.service__block {
+  background-color: #F0F0F0;
+  min-width: 440px;
+  min-height: 160px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.service__logo {
+  align-self: flex-start;
+  padding: 20px;
+}
+.service__text {
+  padding: 20px;
+}
+.service__title {
+  color: #F03000;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.main__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.news__block {
+  background-color: #F0F0F0;
+  min-width: 440px;
+  min-height: 160px;
+  margin-bottom: 20px;
+}
+.news__text {
+  padding: 20px;
+}
+.news__date {
+  color: #888888;
+  font-weight: 600;
+  margin: 0;
+}
+.news__title {
+  color: #F03000;
+  margin: 10px 0 10px 0;
+}
+.news__description {
+  margin: 0;
+}
+
+.footer {
+  background-color: #444444;
+  height: 60px;
+}
+.footer__copyright {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}/*# sourceMappingURL=style.css.map */

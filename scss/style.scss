@@ -1,0 +1,192 @@
+$font-primary: 'Montserrat', sans-serif;
+$font-description: 'Open Sans', sans-serif;
+
+$color-primary: #F03000;
+
+$spacer: 20px;
+
+body {
+    font-family: $font-primary;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 $spacer;
+}
+
+.header {
+    margin: 40px auto 30px auto;
+
+    &__logo {
+        width: 100%;
+        max-height: 30px;
+    }
+
+    &__menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 30px;
+        padding: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-primary;
+        font-size: 18px;
+        font-weight: 600;
+        display: inline-block;
+        padding: $spacer;
+
+        &:hover {
+            background-color: $color-primary;
+            color: white;
+        }
+    }
+}
+
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.offer {
+    color: white;
+
+    &__main {
+        background-color: #888888;
+        background-size: cover;
+        background-position: center;
+        min-width: 440px;
+        min-height: 240px;
+        margin-bottom: $spacer;
+    }
+
+    &__minor {
+        background-color: #888888;
+        background-size: cover;
+        background-position: center;
+        min-width: 440px;
+        min-height: 150px;
+        margin-bottom: $spacer;
+    }
+
+    &__price {
+        background-color: $color-primary;
+        font-size: 18px;
+        display: inline-block;
+        padding: 10px;
+        margin: $spacer;
+    }
+
+    &__title {
+        padding: $spacer;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    &__description {
+        padding: $spacer;
+        margin: 0;
+    }
+}
+
+.palmy {
+    background-image: url(images/palmy.png);
+}
+
+.jezero {
+    background-image: url(images/jezero.png);
+}
+
+.nakole {
+    background-image: url(images/nakole.png);
+}
+
+.lodicka {
+    background-image: url(images/lodicka.png);
+}
+
+.podkova {
+    background-image: url(images/podkova.png);
+}
+
+.zatoka {
+    background-image: url(images/zatoka.png);
+}
+
+.service {
+    &__block {
+        background-color: #F0F0F0;
+        min-width: 440px;
+        min-height: 160px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: $spacer;
+    }
+
+    &__logo {
+        align-self: flex-start;
+        padding: $spacer;
+    }
+
+    &__text {
+        padding: $spacer;
+    }
+
+    &__title {
+        color: $color-primary;
+        font-size: 18px;
+        margin-top: 0;
+    }
+}
+
+.main__title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.news {
+    &__block {
+    background-color: #F0F0F0;
+    min-width: 440px;
+    min-height: 160px;
+    margin-bottom: $spacer;
+    }
+
+    &__text {
+        padding: $spacer;
+    }
+
+    &__date {
+        color: #888888;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    &__title {
+        color: $color-primary;
+        margin: 10px 0 10px 0;
+    }
+
+    &__description {
+        margin: 0;
+    }
+}
+
+.footer {
+    background-color: #444444;
+    height: 60px;
+
+    &__copyright {
+        color: white;
+        text-align: center;
+        padding: $spacer 0;
+    }
+}
