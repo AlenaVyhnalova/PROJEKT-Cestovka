@@ -72,8 +72,6 @@ body {
         background-color: #888888;
         background-size: cover;
         background-position: center;
-        min-width: 440px;
-        min-height: 240px;
         margin-bottom: $spacer;
     }
 
@@ -81,8 +79,6 @@ body {
         background-color: #888888;
         background-size: cover;
         background-position: center;
-        min-width: 440px;
-        min-height: 150px;
         margin-bottom: $spacer;
     }
 
@@ -95,7 +91,7 @@ body {
     }
 
     &__title {
-        padding: $spacer;
+        padding: $spacer $spacer 0 $spacer;
         margin: 0;
     }
 
@@ -105,6 +101,7 @@ body {
 
     h2 {
         font-size: 20px;
+        padding: $spacer;
     }
 
     &__description {
@@ -115,27 +112,54 @@ body {
 
     @media (min-width: 768px) { 
         display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
         gap: $spacer;
 
         &__main {
-            min-width: 728px;
-            min-height: 360px;
             grid-column: 1 / -1;
             margin: 0;
         }
 
         .minor1 {
-            min-width: 354px;
-            min-height: 180px;
             grid-column: 1 / 2;
         }
 
         .minor2 {
-            min-width: 354px;
-            min-height: 180px;
             grid-column: 2 / 3;
+        }
+    }
+
+    @media (min-width: 960px) { 
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: $spacer;
+
+        &__main {
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+        }
+
+        .minor1 {
+            grid-column: 2 / 3;
+            margin: 0;
+        }
+
+        .minor2 {
+            grid-column: 2 / 3;
+            margin: 0;
+        }
+
+        .lodicka {
+            grid-column: 2 / 3;
+            grid-row: 1 / -1;
+        }
+
+        .podkova {
+            grid-column: 1 / 2;
+        }
+
+        .zatoka {
+            grid-column: 1 / 2;
         }
     }
 }
@@ -167,8 +191,6 @@ body {
 .service {
     &__block {
         background-color: #F0F0F0;
-        min-width: 440px;
-        min-height: 160px;
         display: flex;
         justify-content: space-around;
         margin-bottom: $spacer;
@@ -195,15 +217,22 @@ body {
 
     @media (min-width: 768px) { 
         display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
         gap: $spacer;
 
         &__block {
-            min-width: 354px;
-            min-height: 188px;
             margin: 0;
+            display: block;
+            text-align: center;
         }
+
+        &__text {
+            padding: 0 $spacer $spacer $spacer;
+        }
+    }
+
+    @media (min-width: 960px) { 
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -215,8 +244,6 @@ body {
 .news {
     &__block {
     background-color: #F0F0F0;
-    min-width: 440px;
-    min-height: 160px;
     margin-bottom: $spacer;
     }
 
@@ -237,6 +264,12 @@ body {
 
     &__description {
         margin: 0;
+    }
+
+    @media (min-width: 960px) { 
+        display: grid;
+        gap: $spacer;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
