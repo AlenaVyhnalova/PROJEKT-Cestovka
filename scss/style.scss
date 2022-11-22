@@ -73,6 +73,9 @@ body {
         background-size: cover;
         background-position: center;
         margin-bottom: $spacer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__minor {
@@ -130,9 +133,16 @@ body {
     }
 
     @media (min-width: 960px) { 
-        grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
         margin-bottom: $spacer;
+
+        .var1 {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .var2 {
+            grid-template-columns: 1fr 2fr;
+        }
 
         &__main {
             grid-column: 1 / 2;

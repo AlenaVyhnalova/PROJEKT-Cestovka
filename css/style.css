@@ -60,6 +60,9 @@ body {
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .offer__minor {
   background-color: #888888;
@@ -109,9 +112,14 @@ body {
 }
 @media (min-width: 960px) {
   .offer {
-    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 20px;
+  }
+  .offer .var1 {
+    grid-template-columns: 2fr 1fr;
+  }
+  .offer .var2 {
+    grid-template-columns: 1fr 2fr;
   }
   .offer__main {
     grid-column: 1/2;
