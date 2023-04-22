@@ -67,7 +67,7 @@ body {
 .offer__minor {
   background-color: #888888;
   background-size: cover;
-  background-position: center;
+  background-position: left bottom;
   margin-bottom: 20px;
 }
 .offer__price {
@@ -148,25 +148,55 @@ body {
 .palmy {
   background-image: url(../images/palmy.png);
 }
+@media (min-width: 768px) {
+  .palmy {
+    background-image: url(../images/palmy@2x.png);
+  }
+}
 
 .jezero {
   background-image: url(../images/jezero.png);
+}
+@media (min-width: 768px) {
+  .jezero {
+    background-image: url(../images/jezero@2x.png);
+  }
 }
 
 .nakole {
   background-image: url(../images/nakole.png);
 }
+@media (min-width: 768px) {
+  .nakole {
+    background-image: url(../images/nakole@2x.png);
+  }
+}
 
 .lodicka {
   background-image: url(../images/lodicka.png);
+}
+@media (min-width: 768px) {
+  .lodicka {
+    background-image: url(../images/lodicka@2x.png);
+  }
 }
 
 .podkova {
   background-image: url(../images/podkova.png);
 }
+@media (min-width: 768px) {
+  .podkova {
+    background-image: url(../images/podkova@2x.png);
+  }
+}
 
 .zatoka {
   background-image: url(../images/zatoka.png);
+}
+@media (min-width: 768px) {
+  .zatoka {
+    background-image: url(../images/zatoka@2x.png);
+  }
 }
 
 .service__block {
